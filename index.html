@@ -1,21 +1,632 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World</title>
-    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
-    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Oz Inderbitzin</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    </script>
-  </body>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+        <!--
+	      <div class="logo">
+	         <a href="index.html">Oz</a>
+	      </div>-->
+
+	      <nav id="nav-wrap">
+
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>
+
+	         <ul id="nav" class="nav">
+             <li><a class="smoothscroll" href="index.html">Oz Inderbitzin</a></li>
+	            <li><a class="smoothscroll" href="#hero">About Me.</a></li>
+		         <li class="current"><a class="smoothscroll" href="#portfolio">Skills.</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contact.</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+	      <ul class="header-social">
+	        	<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://github.com/FatalOz"><i class="fa fa-github"></i></a></li>
+            <li><a href="#"><i class="fa fa-file-pdf-o"></i></a>
+	      </ul>
+
+	   </div>
+
+   </header> <!-- end header -->
+
+
+   <!-- homepage hero
+   ================================================== -->
+   <section id="hero">
+
+		<div class="row hero-content">
+
+			<div class="twelve columns hero-container">
+
+			   <!-- hero-slider start-->
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">My name is <span>Oz Inderbitzin</span>. I'm learning to program.
+								</h1>
+
+								<h3 class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
+							</div>
+					   </li>
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Take a look at some of <a class="smoothscroll" href="#portfolio" title="portfolio" >my works</a> or
+								<a class="smoothscroll" href="#contact" title="contact us">get in touch</a> to discuss how I can help you.</h1>
+
+								<h3 class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>
+							</div>
+					   </li>
+
+				   </ul>
+
+			   </div> <!-- end hero-slider -->
+
+	      </div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->
+
+   </section> <!-- end homepage hero -->
+
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>My Latest Projects<span>.</span></h1>
+
+	         <hr />
+
+	         <p>My current project is a small roguelike game blending old and new game mechanics with retro and modern game graphics. Check out the <a href="https://github.com/FatalOz/Project-DOTA">GitHub here.</a>
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/portfolio/underwater.jpg" alt="Underwater">
+                     <div class="overlay"></div>
+                     <div class="portfolio-item-meta">
+     					      <h5>Underwater</h5>
+                        <p>Videography</p>
+     					   </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+                     <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Hotel Sign</h5>
+                           <p>Branding</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/portfolio/beetle.jpg" alt="Beetle">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Beetle</h5>
+                           <p>Webdesign</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Banjo Player</h5>
+                           <p>Photography</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                   <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Lighthouse</h5>
+                           <p>Web Development</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/portfolio/girl.jpg" alt="Girl Stuff">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Girl Stuff</h5>
+                           <p>Photography</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-07">
+                     <img src="images/portfolio/coffee.jpg" alt="Coffee Cup">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Coffee Cup</h5>
+                           <p>Branding</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-08">
+                     <img src="images/portfolio/judah.jpg" alt="Judah">
+                     <div class="overlay">
+                      	<div class="portfolio-item-meta">
+        					      <h5>Judah</h5>
+                           <p>Webdesign</p>
+        					   </div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+       		</div>  <!-- item end -->
+
+         </div> <!-- end portfolio-wrapper -->
+
+
+         <!-- modal popup
+	   	========================================================= -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-underwater.jpg" alt="Underwater" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Underwater</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories">Videography</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="http://www.behance.net">Details</a>
+            	<a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 end -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-hotel.jpg" alt="Hotel Sign" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Hotel Sign</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories">Branding, Web Development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 end -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Beetle</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories">Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 end -->
+
+			<div id="modal-04" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-banjo-player.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Banjo Player</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories">Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 end -->
+
+	      <div id="modal-05" class="popup-modal slider mfp-hide">
+
+	      	<div class="media">
+	      		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Lighthouse</h4>
+
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+			      <div class="categories">Web Development</div>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 end -->
+
+	      <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-girl.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Girl Stuff</h4>
+
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+			      <div class="categories">Photography</div>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 end -->
+
+	      <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-coffee.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Coffee Cup</h4>
+
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+			      <div class="categories">Branding</div>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 end -->
+
+	      <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-judah.jpg" alt="" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Judah</h4>
+
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+			      <div class="categories">Webdesign</div>
+
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-08 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end portfolio -->
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>My skills<span>.</span></h1>
+
+	         <hr />
+
+	         <p>As an aspiring computer science student in the modern world, I'm learning and mastering web technologies, programming fundamentals, and languages. Check out what I know.
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">
+
+      	<div class="process bgrid-half tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+			      <h3>Java</h3>
+
+			      <p>A main part of my education at CSULA was learning Java. Although some might say the language is outdated, it's a great foundation for programming in general, and through the Java series I've mastered OOP, the intricacies of data structures, and many, many types of sorting algorithms.
+			      </p>
+
+		   	</div>
+
+      		<div class="bgrid">
+
+			     	<h3>C#</h3>
+
+			     	<p>As a gamer, I became interested in how to make games myself. So I invested time into learning how to use the Unity game engine, which itself uses the C# language. C# is quite similar to Java, but has a few key differences that set it apart from it, and in some cases make it better.
+			   	</p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+			     	<h3>HTML, CSS, and JavaScript</h3>
+
+			     	<p>When I initially became interested in programming, I used free online courses to learn the fundamentals of web programming. With that and a little gritty 'Inspect Element' curiosity, I have become fluent in the building blocks of the internet.
+			      </p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+			      <h3>GitHub</h3>
+
+			      <p>Recently, I've started to collaborate with other students on a software project. This has essentially forced me to figure out and learn how to use GitHub and Git to properly implement version control for our project. Now, I couldn't imagine living without it!
+			      </p>
+
+		      </div>
+
+      	</div> <!-- end process -->
+
+     	</div> <!-- end row -->
+
+
+      </div> <!-- end row -->
+
+      <div id="call-to-action">
+
+
+	   </div> <!-- end call-to-action -->
+
+   </section> <!-- end about -->
+
+
+   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Get In Touch With Me<span>.</span></h1>
+
+	         <hr />
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+
+      	<div id="contact-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action=""  >
+      			<fieldset>
+
+                  <div class="group">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required />
+                  </div>
+                  <div>
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+	               </div>
+                  <div>
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+	               </div>
+                  <div>
+	                 	<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" required ></textarea>
+	               </div>
+                  <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+         </div>
+
+         <div class="six columns tab-whole right">
+
+            <p class="lead">
+
+            <h3>Contact Information:</h3>
+			   <p>Phone: (818) 397 8404<br>
+            Email: ozinderbitzin@gmail.com<br>
+			   </p>
+
+         </div>
+
+      </div> <!-- end row -->
+
+   </section>  <!-- end contact -->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+      	<div class="twelve columns content group">
+
+				<ul class="social-links">
+               <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <hr />
+
+      	</div>
+
+         <ul class="copyright">
+         	<li>Design by <a href="http://www.styleshout.com/">Styleshout.</a>.</li>
+         </ul>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
