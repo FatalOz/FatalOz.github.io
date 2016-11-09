@@ -2189,7 +2189,7 @@ ul#nav li.current a:after {
 
 #contact {
 	background: #12151B;
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 138px;
 	overflow: hidden;
 	border-bottom: 1px solid #15191d;
@@ -2207,7 +2207,7 @@ ul#nav li.current a:after {
 }
 
 #contact .right {
-	padding-left: 35px;
+	padding-left: 20px;
 	position: relative;
 	top: -6px;
 }
