@@ -684,7 +684,11 @@ header .header-social {
 	position: relative;
 	top: -1px;
 }
-
+header .myResume{
+		font: 13px "raleway-heavy", sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+}
 header .header-social li {
 	display: inline-block;
 	margin-right: 15px;
@@ -778,6 +782,10 @@ ul#nav li a {
 	-webkit-transition: color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
+}
+
+ul#nav .myName {
+	font-size: 20px;
 }
 
 ul#nav li a:hover {
