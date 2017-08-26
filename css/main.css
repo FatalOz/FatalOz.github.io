@@ -2526,6 +2526,12 @@ footer .social-links li a {
 	color: rgba(255, 255, 255, 0.1);
 }
 
+footer .myResume{
+		font: 13px "raleway-heavy", sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+}
+
 footer .social-links li a:hover {
 	color: white;
 }
